@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: 3px solid #0056b3;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+aside {
+    border-right: 1px solid #dee2e6;
+}
+
+aside h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+#transactionChart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

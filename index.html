@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="bg-primary text-white p-3 mb-4">
+            <h1 class="text-center text-white">CT Dashboard</h1>
+        </header>
+        <div class="row">
+            <aside class="col-md-3 p-3 bg-light border-right">
+                <h2>Filters</h2>
+                <div class="form-group mb-3">
+                    <label for="customerFilter">Customer Name:</label>
+                    <input type="text" id="customerFilter" class="form-control" placeholder="Enter customer name">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="amountFilter">Transaction Amount:</label>
+                    <input type="number" id="amountFilter" class="form-control" placeholder="Enter amount">
+                </div>
+                <div class="form-group">
+                    <label for="customerSelect">Select Customer:</label>
+                    <select id="customerSelect" class="form-control"></select>
+                </div>
+            </aside>
+            <main class="col-md-9 p-3">
+                <div class="mb-4">
+                    <h2>Customer Transactions</h2>
+                    <div class="table-responsive">
+                        <table id="customerTable" class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Date</th>
+                                    <th>Transaction Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <h2>Transaction Amount Chart</h2>
+                    <canvas id="transactionChart" width="400" height="200"></canvas>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
